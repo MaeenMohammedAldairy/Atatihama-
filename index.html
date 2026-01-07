@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>جمعية عطاء تهامة التعاونية | الموقع الرسمي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+      :root {
+        --primary: #064e3b; /* Emerald 950 - الروح الزراعية العميقة */
+        --secondary: #10b981; /* Emerald 500 - حيوية النباتات */
+        --accent: #f97316; /* Orange 500 - شمس تهامة وعطائها */
+        --accent-warm: #fbbf24; /* Amber 400 - لون السنابل */
+        --bg-light: #ffffff;
+        --bg-warm: #fffcf9; /* خلفية كريمية دافئة */
+        --text-dark: #064e3b;
+        --text-muted: #64748b;
+      }
+      body {
+        font-family: 'Tajawal', sans-serif;
+        background-color: var(--bg-warm);
+        color: var(--text-dark);
+        margin: 0;
+        overflow-x: hidden;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+      }
+      .card-hover {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 50px -12px rgba(249, 115, 22, 0.1);
+      }
+      .bg-gradient-agricultural {
+        background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+      }
+      .bg-gradient-vibrant {
+        background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar { width: 10px; }
+      ::-webkit-scrollbar-track { background: var(--bg-warm); }
+      ::-webkit-scrollbar-thumb { 
+        background: linear-gradient(to bottom, var(--primary), var(--secondary)); 
+        border-radius: 20px;
+        border: 2px solid var(--bg-warm);
+      }
+      @keyframes slow-zoom {
+        from { transform: scale(1); }
+        to { transform: scale(1.1); }
+      }
+      .animate-slow-zoom {
+        animation: slow-zoom 20s infinite alternate linear;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@heroicons/react/": "https://esm.sh/@heroicons/react@^2.2.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0"
+  }
+}
+</script>
+</head>
+  <body class="antialiased">
+    <div id="root"></div>
+  </body>
+</html>
